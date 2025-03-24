@@ -1,0 +1,22 @@
+@import url('globals.css');
+@import "tailwindcss";
+
+.input-section {
+    @apply flex flex-col mb-3
+}
+
+input {
+    @apply h-[40px] w-full font-semibold text-[14px] rounded-md px-3 bg-zinc-800 border-[1px] border-zinc-700 gap-y-1 focus:outline-none
+}
+
+input[type = 'file']{
+    @apply bg-transparent border-none
+}
+
+label {
+    @apply text-[12px] text-zinc-400
+}
+
+.submit-btn{
+    @apply bg-green-800 border-green-600 cursor-pointer mt-2
+}
