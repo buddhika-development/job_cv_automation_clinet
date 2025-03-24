@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 .input-section {
-    @apply flex flex-col mb-3
+    @apply flex flex-col mb-4
 }
 
 input {
@@ -18,5 +18,18 @@ label {
 }
 
 .submit-btn{
-    @apply bg-green-800 border-green-600 cursor-pointer mt-2
+    @apply bg-green-800 border-[1px] rounded-md border-green-600 cursor-pointer mt-2 w-full h-[40px] flex justify-center items-center
+}
+
+.error-message {
+    @apply text-[12px] text-red-400
+}
+
+
+.error-message-section {
+    @apply text-[14px] text-red-200 bg-red-200/20 border-[1px] border-red-400/20 h-[40px] flex items-center justify-center rounded-lg mt-3
+}
+
+.success-message-section {
+    @apply text-[14px] text-green-200 bg-green-200/20 border-[1px] border-green-400/20 h-[40px] flex items-center justify-center rounded-lg mt-3
 }
